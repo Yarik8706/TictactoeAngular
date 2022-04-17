@@ -1,0 +1,21 @@
+<div class="main" align="center">
+  <div class="container">
+    <div>
+      <h1 class="title" *ngIf="!winner">Current Player: {{ player }}</h1>
+      <h1 class="title" *ngIf="winner">Player {{ winner }} won the game!</h1>
+    </div>
+<!--    <h1 class="title" *ngIf="isDraw">No winner!</h1>-->
+  </div>
+
+  <div class="container">
+    <button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
+  </div>
+
+  <div class="game" align="center">
+    <app-squire
+      *ngFor="let value of squares; let i = index"
+      [value]="value"
+      (click)="makeMove(i)">
+    </app-squire>
+  </div>
+</div>

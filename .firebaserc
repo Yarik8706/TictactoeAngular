@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tictactoeangular-7cf52": {
+      "hosting": {
+        "tictactoeAngular": [
+          "tictactoeangular-7cf52"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tictactoeangular-7cf52"
+  }
+}
